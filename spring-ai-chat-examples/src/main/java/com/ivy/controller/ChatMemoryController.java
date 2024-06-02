@@ -23,21 +23,21 @@ import static org.springframework.ai.chat.client.advisor.AbstractChatMemoryAdvis
 
 @RestController
 public class ChatMemoryController {
-    private final List<Message> historyMessage = new ArrayList<>();
+//    private final List<Message> historyMessage = new ArrayList<>();
 
     @Resource
     private OpenAiChatModel openAiChatModel;
 
-    @GetMapping("/chatWithList")
-    public String chatWithList(String prompt) {
-        // 将用户消息添加到历史消息列表中
-        historyMessage.add(new UserMessage(prompt));
-        Generation result = openAiChatModel.call(new Prompt(historyMessage)).getResult();
-        // 将AI消息添加到历史消息列表中
-        AssistantMessage assistantMessage = result.getOutput();
-        historyMessage.add(assistantMessage);
-        return assistantMessage.getContent();
-    }
+//    @GetMapping("/chatWithList")
+//    public String chatWithList(String prompt) {
+//        // 将用户消息添加到历史消息列表中
+//        historyMessage.add(new UserMessage(prompt));
+//        Generation result = openAiChatModel.call(new Prompt(historyMessage)).getResult();
+//        // 将AI消息添加到历史消息列表中
+//        AssistantMessage assistantMessage = result.getOutput();
+//        historyMessage.add(assistantMessage);
+//        return assistantMessage.getContent();
+//    }
 
     private final ChatMemory chatMemory = new InMemoryChatMemory();
     @GetMapping("/chatWithChatMemory")
