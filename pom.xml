@@ -17,6 +17,7 @@
 
     <modules>
         <module>spring-ai-chat-examples</module>
+        <module>spring-ai-image-examples</module>
     </modules>
 
     <properties>

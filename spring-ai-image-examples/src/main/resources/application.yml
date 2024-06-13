@@ -1,0 +1,9 @@
+server:
+  port: 8802
+
+spring:
+  ai:
+    openai:
+      api-key: xxx
+      base-url: xxx
+

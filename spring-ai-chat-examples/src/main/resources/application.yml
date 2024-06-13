@@ -3,6 +3,6 @@ server:
 spring:
   ai:
     openai:
-      api-key: xxxx
-      base-url: xxxx
+      api-key: sk-1wqTDyoDE2bBARsn63D8D45aEaB14d30B534C16b5514927d
+      base-url: https://api.xty.app
 
