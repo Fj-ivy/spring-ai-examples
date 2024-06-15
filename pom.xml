@@ -18,6 +18,8 @@
     <modules>
         <module>spring-ai-chat-examples</module>
         <module>spring-ai-image-examples</module>
+        <module>spring-ai-audio-examples</module>
+        <module>spring-ai-tools-examples</module>
     </modules>
 
     <properties>
