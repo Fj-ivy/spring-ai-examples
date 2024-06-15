@@ -1,0 +1,9 @@
+server:
+  port: 8804
+
+spring:
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        model: llava:7b

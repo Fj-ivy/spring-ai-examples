@@ -20,6 +20,7 @@
         <module>spring-ai-image-examples</module>
         <module>spring-ai-audio-examples</module>
         <module>spring-ai-tools-examples</module>
+        <module>spring-ai-multimodality-examples</module>
     </modules>
 
     <properties>
