@@ -3,7 +3,28 @@ server:
 
 spring:
   ai:
+    # openai 模型配置
     openai:
       api-key: xxx
       base-url: xxx
+    # zhipuai 模型配置
+    zhipuai:
+      base-url: xxx
+      api-key: xxx
+      chat:
+        enabled: false
+    # azure 模型配置
+    azure:
+      openai:
+        chat:
+          enabled: off
+        endpoint: xxx
+        image:
+          enabled: off
+    # stabilityai 模型配置
+    stabilityai:
+      image:
+        enabled: off
+      base-url: xxx
+      api-key: xxx
 
