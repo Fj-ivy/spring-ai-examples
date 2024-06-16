@@ -21,6 +21,7 @@
         <module>spring-ai-audio-examples</module>
         <module>spring-ai-tools-examples</module>
         <module>spring-ai-multimodality-examples</module>
+        <module>spring-ai-functioncalling-examples</module>
     </modules>
 
     <properties>

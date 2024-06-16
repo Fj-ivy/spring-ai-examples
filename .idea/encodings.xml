@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/spring-ai-audio-examples/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-ai-chat-examples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-ai-functioncalling-examples/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-ai-image-examples/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-ai-multimodality-examples/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-ai-tools-examples/src/main/java" charset="UTF-8" />

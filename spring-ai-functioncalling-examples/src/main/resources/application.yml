@@ -1,0 +1,10 @@
+server:
+  port: 8804
+
+spring:
+  ai:
+    zhipuai:
+      api-key: 6a72ef2198a08c0ac810316552ac0ae5.05iHXfPlsxsvopwk
+      chat:
+        options:
+          model: glm-4
