@@ -14,7 +14,7 @@ public class Config {
 
         return FunctionCallbackWrapper.builder(new MockWeatherService())
                 .withName("WeatherInfo")
-                .withDescription("获取城市的天气")
+                .withDescription("Get the weather in location")
                 .withResponseConverter((response) -> "" + response.temp() + response.unit())
                 .build();
     }

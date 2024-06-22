@@ -14,10 +14,9 @@ public class MockWeatherService implements Function<MockWeatherService.Request, 
      * Weather Function request.
      */
     @JsonInclude(Include.NON_NULL)
-    @JsonClassDescription("获取天气温度接口")
-    public record Request(
-            @JsonProperty(required = true, value = "location") @JsonPropertyDescription("城市的名称 e.g. 北京") String location,
-            @JsonProperty(required = true, value = "unit") @JsonPropertyDescription("温度单位") Unit unit) {
+    @JsonClassDescription("Weather API request")
+    public record Request(@JsonProperty(required = true, value = "location") @JsonPropertyDescription("The city and state e.g. 北京") String location,
+                          @JsonProperty(required = true, value = "unit") @JsonPropertyDescription("Temperature unit") Unit unit) {
     }
 
     /**

@@ -3,8 +3,9 @@ server:
 
 spring:
   ai:
-    zhipuai:
-      api-key: 6a72ef2198a08c0ac810316552ac0ae5.05iHXfPlsxsvopwk
+    openai:
+      api-key: xxx
+      base-url: xxx
       chat:
         options:
-          model: glm-4
+          model: gpt-3.5-turbo
