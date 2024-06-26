@@ -35,7 +35,7 @@ public class OnlineService {
 
     public Flux<String> rag(String prompt) {
         // 检索
-        SearchRequest searchRequest = SearchRequest.query(prompt);
+        SearchRequest searchRequest = SearchRequest.query(prompt).withSimilarityThreshold(0.8);
         List<Document> documents = vectorStore.similaritySearch(searchRequest);
         // 提示词生成
         List<String> context = documents.stream().map(Document::getContent).toList();

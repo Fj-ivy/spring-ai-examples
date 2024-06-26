@@ -20,4 +20,5 @@ spring:
         index-type: NONE # 索引类型
         distance-type: cosine_distance # 指定相似度计算方式
         dimensions: 2048 # 向量维度
-
+      redis:
+        uri: redis://localhost:6379
