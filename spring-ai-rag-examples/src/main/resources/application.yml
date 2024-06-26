@@ -1,0 +1,23 @@
+server:
+  port: 8806
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: pgvector
+    password: pgvector
+    driver-class-name: org.postgresql.Driver
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      embedding:
+        options:
+          model: gemma:2b
+      chat:
+        model: gemma:2b
+    vectorstore:
+      pgvector:
+        index-type: NONE # 索引类型
+        distance-type: cosine_distance # 指定相似度计算方式
+        dimensions: 2048 # 向量维度
+

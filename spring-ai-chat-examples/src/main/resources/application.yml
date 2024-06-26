@@ -5,4 +5,6 @@ spring:
     openai:
       api-key: sk-1wqTDyoDE2bBARsn63D8D45aEaB14d30B534C16b5514927d
       base-url: https://api.xty.app
-
+      chat:
+        options:
+          model: gpt-3.5-turbo
