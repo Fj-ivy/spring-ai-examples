@@ -12,9 +12,9 @@ spring:
       base-url: http://localhost:11434
       embedding:
         options:
-          model: gemma:2b
+          model: qwen:7b
       chat:
-        model: gemma:2b
+        model: qwen:7b
     vectorstore:
       pgvector:
         index-type: NONE # 索引类型
