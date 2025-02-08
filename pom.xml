@@ -23,6 +23,7 @@
         <module>spring-ai-multimodality-examples</module>
         <module>spring-ai-functioncalling-examples</module>
         <module>spring-ai-rag-examples</module>
+        <module>spring-ai-deepseek-examples</module>
     </modules>
 
     <properties>

@@ -1,0 +1,10 @@
+server:
+  port: 8801
+spring:
+  ai:
+    openai:
+      api-key: sk-xxx
+      base-url: https://api.deepseek.com
+      chat:
+        options:
+          model: deepseek-chat
