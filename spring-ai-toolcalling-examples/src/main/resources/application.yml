@@ -1,0 +1,8 @@
+server:
+  port: 8808
+
+spring:
+  ai:
+    ollama:
+      chat:
+        model: qwen2.5

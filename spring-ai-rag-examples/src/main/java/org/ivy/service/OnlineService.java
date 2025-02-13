@@ -1,6 +1,7 @@
 package org.ivy.service;
 
 import jakarta.annotation.Resource;
+import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.prompt.Prompt;
 import org.springframework.ai.chat.prompt.SystemPromptTemplate;
@@ -35,10 +36,13 @@ public class OnlineService {
 
     public Flux<String> rag(String prompt) {
         // 检索
-        SearchRequest searchRequest = SearchRequest.query(prompt).withSimilarityThreshold(0.8);
+        SearchRequest searchRequest = SearchRequest.builder().query(prompt).similarityThreshold(0.8).build();
         List<Document> documents = vectorStore.similaritySearch(searchRequest);
+        if (CollectionUtils.isEmpty(documents)) {
+            return Flux.empty();
+        }
         // 提示词生成
-        List<String> context = documents.stream().map(Document::getContent).toList();
+        List<String> context = documents.stream().map(Document::getFormattedContent).toList();
         SystemPromptTemplate promptTemplate = new SystemPromptTemplate(ragTemplate);
         Prompt p = promptTemplate.create(Map.of("context", context, "question", prompt));
         ChatClient chatClient = ChatClient.builder(chatModel).build();
